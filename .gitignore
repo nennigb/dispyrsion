@@ -1,0 +1,13 @@
+# Byte-code
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+*.egg-info/
+build/
+dist/
+
+# pdoc
+html/
+*.html
+*.dot
