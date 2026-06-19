@@ -16,7 +16,7 @@ dependencies = [
   'numpy',
   'sympy>=1.4',
   'scipy',
-  'polze',
+  'polze>1.1.0',
   'tqdm',
 ]
 classifiers = [

@@ -31,6 +31,13 @@ import doctest
 import os
 import sys
 import unittest
+import numpy as np
+
+# Numpy 2.0 change default printing options making doctest failing.
+# https://numpy.org/neps/nep-0051-scalar-representation.html
+# Use legacy mode for testing
+if np.lib.NumpyVersion(np.__version__) >= '2.0.0b1':
+    np.set_printoptions(legacy="1.25")
 
 # Add examples path for import
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../examples')))
